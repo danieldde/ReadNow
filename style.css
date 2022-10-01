@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.estilo-nav{
+    background-color:#333a40;
+}
+
+
+.container-img-der{
+    width: 50%;
+}
+    .container-text-izq{
+    width: 50%;
+    background-color:#333a40;
+    color: white;
+}
+.container-main{
+    position: relative;
+    overflow: hidden;
+}
+.container-texto{
+    position:absolute;
+    border: 1px solid blueviolet;
+    top: 30%;
+    left: 50%;
+}
+.container-texto p {
+    font-size: 1rem;
+    text-align: center;
+}
+.container-texto h2{
+    text-align: right;
+}
+
+.btn-comprar{
+    color: #25a342;
+    border-radius: 15px;
+    padding: 10px;
+    background-color:#333a40;
+    border: none;
+}
+.btn-comprar:hover{
+    background-color:#25a342;
+    color: #f1efef;
+    transition: 0.5s;
+}
+.bgo{
+    filter: brightness(50%);
+}
+.card{
+    width: 25rem;
+}
+
+
+.footer{
+    background-color: #1d3c4e;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+/*Escritorio*/
+@media (min-width: 1199.98px)  {
+    .card{
+        width: 21rem;
+    }
+    
+}
+/*Fin Escritorio*/
+
+/*Tablet*/
+/*Portrait*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    .divicion{
+        flex-direction: column;
+    }
+    .container-img-der{
+        width: 100%;
+    }
+        .container-text-izq{
+        width: 100%;
+    }
+    .card{
+        width:22rem;
+    }
+}
+
+
+@media (min-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
+    .card{
+        width: 18rem;
+    }
+    .divicion{
+        flex-direction: column;
+    }
+    .container-img-der{
+        width: 100%;
+    }
+        .container-text-izq{
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px)and (orientation:portrait) {
+    .card{
+        width: 20rem;
+    }
+    .divicion{
+        flex-direction: column;
+    }
+    .container-img-der{
+        width: 100%;
+    }
+        .container-text-izq{
+        width: 100%;
+    }
+ }
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+    .card{
+        width:23rem;
+    }
+    .divicion{
+        flex-direction: column;
+    }
+    .container-img-der{
+        width: 100%;
+    }
+        .container-text-izq{
+        width: 100%;
+    }
+    .flex-main{
+        display: flex;
+        justify-content: center;
+    }
+}
